@@ -1,5 +1,6 @@
 
 let movie = ['Tenet', 'Inception', 'Dark knight', 'Doraemon', 'Naruto'];
 console.log(movie);
- movie.push('Apollo 13');
- console.log(movie);
+let newItem = prompt('Enter new movie you like');
+movie.push(newItem);
+console.log(movie)
