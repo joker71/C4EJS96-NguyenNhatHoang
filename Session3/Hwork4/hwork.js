@@ -1,38 +1,43 @@
 let order;
+let c = true;
 let arr = ["T-Shirt", "Jeans", "Shocks"];
-for (let i = 1; i <= 2; i++) {
+while (c) {
     order = prompt("Hi there, welcome to admin shop panel, what do you want to do(C, R, U, D)");
     if (order == "C" || order == "c") {
         let newItem = prompt("Enter new Item");
         arr.push(newItem);
-        alert("THe curent list is:")
-        alert(arr);
+        console.log("THe curent list is:")
+        console.log(arr);
         alert("Done!");
     }
     else
         if (order == "r" || order == "R") {
-            alert("THe curent list is:")
-            alert(arr);
+            console.log("THe curent list is:")
+            console.log(arr);
             alert("Done!");
         }
         else
             if (order == "u" || order == "U") {
                 let pos = prompt("Enter position you want to update");
                 let Item = prompt("Enter the item");
-                arr[pos + 1] = Item;
-                alert("THe curent list is:")
-                alert(arr);
+                arr[pos - 1] = Item;
+                console.log("THe curent list is:")
+                console.log(arr);
                 alert("Done!");
             }
             else
-                if (order == "u" || order == "U") {
+                if (order == "d" || order == "D") {
                     let pos = prompt("Enter position you want to delete");
-                    arr.splice(pos);
-                    alert("THe curent list is:")
-                    alert(arr);
+                    arr.splice(pos - 1, 1);
+                    console.log("THe curent list is:")
+                    console.log(arr);
                     alert("Done!");
                 }
                 else {
                     alert("this comand is not supported!");
                 }
+    let yn = prompt("Do you want to continue(Y/N)");
+    if (yn == "N" || yn == "n") {
+        c = false;
+    }
 }
