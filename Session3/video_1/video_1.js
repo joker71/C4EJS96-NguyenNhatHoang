@@ -70,6 +70,7 @@ function readAllDetail()
         console.log(`${i}. ${movie[i]}`);
     }
 }
+
 //creatArray();
 //readArray();
 //deleteOne();
@@ -79,5 +80,16 @@ function readAllDetail()
 //readAll();
 updateAll2();
 
-
-
+//let n;
+//while(true){
+    //     n = prompt("register an username");
+    //     x = n.length;
+    //     if(x>15){
+    //         alert("your answer is too long")
+    //     }
+    //     else{
+    //         alert('Good username');
+    //         break;
+    //     }
+    // }
+    
