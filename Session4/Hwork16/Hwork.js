@@ -14,7 +14,7 @@ const oldData = {
   };
 
   let newData={}
-  for(let item in oldData)
+  for(let item in oldData)// item đc trả về property của object
   {
     if((item=="firedRice")|| (item="pho"))
     {
