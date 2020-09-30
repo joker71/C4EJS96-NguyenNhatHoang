@@ -10,25 +10,21 @@ let Quiz=[
         ans: 8,
     },
     {
-        que: "How many  sesson in VietNam",
-        choi: [1, 8, 4, 7],
+        que: "How many  sesson in USA",
+        choi: [1,9,18, 4],
         ans: 4,
     },
     {
-        que: "How many day on the week",
-        choi: [1, 8, 9, 7],
-        ans: 7,
+        que: "How many day on the Month",
+        choi: [31, 18, 39, 32],
+        ans: 31,
     },
     {
-        que: "How many legs do an optopus has",
-        choi: [1, 8, 9, 7],
-        ans: 8,
-    },
-    {
-        que: "How many  sesson in VietNam",
-        choi: [1, 8, 4, 7],
+        que: "How many legs do an dog has",
+        choi: [1, 4, 9, 7],
         ans: 4,
     },
+    
 ];
 function shuffle(a) {
     var j, x, i;
