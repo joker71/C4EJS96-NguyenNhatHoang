@@ -1,4 +1,4 @@
-let Quiz=[
+let Quiz = [
     {
         que: "How many day on the week",
         choi: [1, 8, 9, 7],
@@ -11,20 +11,24 @@ let Quiz=[
     },
     {
         que: "How many  sesson in USA",
-        choi: [1,9,18, 4],
+        choi: [1, 9, 18, 1],
         ans: 4,
     },
     {
-        que: "How many day on the Month",
-        choi: [31, 18, 39, 32],
+        que: "How many day on the month",
+        choi: [31, 28, 29, 17],
         ans: 31,
     },
     {
-        que: "How many legs do an dog has",
-        choi: [1, 4, 9, 7],
+        que: "How many legs do an optopus has",
+        choi: [1, 8, 9, 7],
+        ans: 8,
+    },
+    {
+        que: "How many  sesson in VietNam",
+        choi: [1, 8, 4, 7],
         ans: 4,
     },
-    
 ];
 function shuffle(a) {
     var j, x, i;
@@ -36,15 +40,14 @@ function shuffle(a) {
     }
     return a;
 }
-let quizLength= Quiz.length;
-let mixQuiz= shuffle(Quiz);
-let totalRight= 0;
-for(let i=0; i< quizLength; i++)
-{
-    let mixQues= shuffle(mixQuiz[i].choi);
-    let choice= prompt(`${mixQuiz[i].que} \n ${mixQues("\n")}`);
-    if(choice==mixQuiz[i].choi)
-    {
+let quizLength = Quiz.length;
+let mixQuiz = shuffle(Quiz);
+let totalRight = 0;
+for (let i = 0; i < quizLength; i++) {
+    let mixQues = mixQuiz[i].choi;
+    mixQues= shuffle( mixQues);
+    let choice = Number(prompt(`${mixQuiz[i].que} \n ${mixQues }`));
+    if (choice == mixQuiz[i].choi) {
         totalRight++;
     }
 }
