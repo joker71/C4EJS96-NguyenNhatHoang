@@ -11,7 +11,7 @@ let Quiz = [
     },
     {
         que: "How many  sesson in USA",
-        choi: [1, 9, 18, 1],
+        choi: [4, 9, 18, 1],
         ans: 4,
     },
     {
@@ -46,10 +46,11 @@ let totalRight = 0;
 for (let i = 0; i < quizLength; i++) {
     let mixQues = mixQuiz[i].choi;
     mixQues= shuffle( mixQues);
-    let choice = Number(prompt(`${mixQuiz[i].que} \n ${mixQues.join('\n')}`));
+    let choice = Number(prompt(`${mixQuiz[i].que} \n${mixQues.join('\n')}`));
     if (choice == mixQuiz[i].ans) {
         totalRight++;
     }
 }
 alert("We are out of question")
 alert(`Score: ${totalRight}`);
+// .join("Kí hiệu") \n: xuống giòng: 
