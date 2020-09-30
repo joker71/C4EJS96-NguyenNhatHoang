@@ -46,7 +46,7 @@ let totalRight= 0;
 for(let i=0; i< quizLength; i++)
 {
     let mixQues= shuffle(mixQuiz[i].choi);
-    let choice= prompt(`${mixQuiz[i].que} \n ${mixQues}`);
+    let choice= prompt(`${mixQuiz[i].que} \n ${mixQues("\n")}`);
     if(choice==mixQuiz[i].choi)
     {
         totalRight++;
