@@ -1,10 +1,27 @@
-.span1{
+.span1 {
     color: rgb(233, 229, 3);
 }
-.Thediv2{
-   background-color:  #00FF00;
+
+.Thediv2 {
+    background-color: #00FF00;
 }
-.f24px
-{
+
+.f24px {
     font-size: 24px;
+}
+
+a[target="_blank"] {
+    color: yellow;
+}
+
+ul>li {
+    font-weight: bold;
+}
+.item>span
+{
+    font-size: 18px;
+}
+.item>div>span 
+{
+    font-style: italic;
 }
