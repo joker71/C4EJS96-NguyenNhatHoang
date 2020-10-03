@@ -1,0 +1,221 @@
+@font-face {
+    font-family: mainFontbold;
+    src: url("../font/static/Raleway-ExtraBold.ttf");
+}
+
+.Header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 3752px;
+    z-index: 197;
+}
+
+.navar_home {
+    font-size: 13px;
+    font-family: "Raleway";
+    color: rgb(26, 187, 156);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.692;
+    position: absolute;
+    left: 814.109px;
+    top: 47.502px;
+    z-index: 196;
+}
+
+.navar_home>span {
+    margin: 20px;
+}
+
+.Logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 3752px;
+    z-index: 195;
+}
+.logoFont{
+    font-size: 16px;
+    font-family: "BebasNeue";
+    color: rgb(233, 233, 233);
+    line-height: 1.125;
+    text-align: left;
+    
+}
+.m {
+    position: absolute;
+    left: 243.002px;
+    top: 56px;
+    z-index: 194;
+}
+
+._0 {
+    position: absolute;
+    left: 227.937px;
+    top: 56.5px;
+    z-index: 193;
+}
+
+.o {
+    position: absolute;
+    left: 243.937px;
+    top: 39.5px;
+    z-index: 192;
+}
+
+.l {
+   
+    position: absolute;
+    left: 227.937px;
+    top: 39px;
+    z-index: 191;
+}
+
+.Ellipse_1 {
+    border-radius: 50%;
+    background-color: rgb(65, 65, 65);
+    position: absolute;
+    left: 214px;
+    top: 31px;
+    width: 52px;
+    height: 52px;
+    z-index: 190;
+}
+
+.Shape_1_copy {
+    background-color: rgb(65, 65, 65);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1601px;
+    height: 3px;
+    z-index: 188;
+}
+
+.Back_Shape {
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    width: 1600px;
+    height: 109px;
+    z-index: 187;
+}
+
+.Intro {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 3752px;
+    z-index: 185;
+}
+
+.Intro>H1 {
+    font-size: 35px;
+    font-family: "Raleway";
+    color: rgb(96, 96, 96);
+    font-weight: bold;
+    line-height: 0.629;
+    position: absolute;
+    left: 212.625px;
+    top: 183.493px;
+    z-index: 184;
+}
+
+.Intro>span {
+    font-size: 25px;
+    font-family: "Raleway";
+    color: rgb(96, 96, 96);
+    line-height: 0.88;
+    position: absolute;
+    left: 213.125px;
+    top: 248.422px;
+    z-index: 183;
+}
+.Slider {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 3752px;
+    z-index: 181;
+    font-family: "Raleway";
+  }
+ 
+  .Rectangle_Slider {
+    background-color: rgba(255, 255, 255, 0.949);
+    position: absolute;
+    font-size: 20px;
+    color:rgb(101, 101, 101) ;
+    left: 265px;
+    top: 719px;
+    width: 200px;
+    height: 36px;
+    z-index: 177;
+    text-align: center;
+  }
+  .Layer_1 {
+    position: absolute;
+    left: 215px;
+    top: 318px;
+    width: 1170px;
+    height: 550px;
+    z-index: 174;
+  }
+  .Cover_1 {
+    background-color: rgb(187, 187, 187);
+    position: absolute;
+    left: 215px;
+    top: 318px;
+    width: 1170px;
+    height: 550px;
+    z-index: 173;
+  }
+  .W1{
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgb(96, 96, 96);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.375;
+}
+.SerIntro
+{
+    position: absolute;
+    left: 747.998px;
+    top: 943px;
+    z-index: 140;
+}
+.Service_Section {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 3752px;
+    z-index: 171;
+  }
+  .Package_Font_Title {
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgb(96, 96, 96);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.733;
+  }
+  .Package_Font_Content{
+
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(122, 122, 122);
+    line-height: 1.786;
+    text-align: center;
+
+  }
+  .Package_Design {
+      position: relative;
+  }
+  
