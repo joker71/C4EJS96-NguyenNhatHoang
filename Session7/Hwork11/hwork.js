@@ -1,9 +1,8 @@
-let d= document.getElementById("name_input");
-console.log(d);
-let b= document.getElementById("upper_btn");
-b.addEventListener('click', (e) =>
+document.getElementById("upper_btn").addEventListener(`click`, (e) =>
 {
-    let n= d.v;
-    n= n.toUpperCase();
-    document.getElementById("div_res").innerHTML= n;
+    let d= document.getElementById("name_input").value;
+    // console.log(d);
+    let x=d;
+    // console.log(x);
+    document.getElementById("div_res").innerHTML= x.toUpperCase();
 })
