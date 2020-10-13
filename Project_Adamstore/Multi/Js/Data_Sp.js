@@ -1,5 +1,6 @@
-let product = {
-    "Mắt biếc":{
+let product = [
+    {   
+        id: 0,
         name: "Mắt biếc",
         kind: "Blues",
         rot: 33,
@@ -18,7 +19,8 @@ let product = {
             "8. Lệ đá"
         ]
     },
-    "The Best":{
+    {
+        id: 1,
         name: "The Best",
         singer: "Bảo Yến",
         kind: "Jazz",
@@ -39,7 +41,8 @@ let product = {
             "5B. COI MONG"
         ]
     },
-    "Giọt Lệ Sầu":{
+    {   
+        id: 2,
         name: "Giọt Lệ Sầu",
         singer: "Chế Linh",
         kind: "Bolero",
@@ -60,7 +63,8 @@ let product = {
         ]
 
     },
-    "Đĩa than Chuyện Hẹn Hò":{
+    {
+        id: 3,
         name: "Đĩa than Chuyện Hẹn Hò",
         singe: "Nhiều ca sĩ",
         kind: "Bolero",
@@ -79,7 +83,8 @@ let product = {
             "4. Đường xưa lối cũ - Hương Lan & Thái Châu"
         ]
     },
-    "Đập Vỡ Cây Đàn":{
+    {
+        id: 4,
         name: "Đập Vỡ Cây Đàn",
         singer: "Duy khánh",
         kind: "383",
@@ -98,7 +103,8 @@ let product = {
             "8. Mưa trên phố Huế"
         ]
     },
-    "Mùa thu chết":{
+    {
+        id: 5,
         name: "Mùa thu chết",
         singer: "Đức Tuấn - Phạm Duy",
         kind: "383",
@@ -120,7 +126,8 @@ let product = {
             "11. Outtro"
         ]
     },
-    "Lênh đênh nhớ phố":{
+    {
+        id: 6,
         name: "Lênh đênh nhớ phố",
         kind: "Bolero",
         rot: 78,
@@ -141,7 +148,8 @@ let product = {
             "10. Rừng xưa đã khép",
         ]
     },
-    "Đĩa than Hoa Trinh Nữ":{
+    {
+        id: 7,
         name: "Đĩa than Hoa Trinh Nữ",
         kind: "Bolero",
         rot: 78,
@@ -160,7 +168,8 @@ let product = {
             "4B. Mùa đông của anh",
         ]
     },
-    "Thriller":{
+    {
+        id: 8,
         name: "Thriller",
         kind: "Jazz",
         rot: 45,
@@ -175,7 +184,8 @@ let product = {
             "4. Thriller"
         ]
     },
-    "Chuyện Của Lam":{
+    {
+        id: 9,
         name: "Chuyện Của Lam",
         singer: "Lam Anh",
         kind: "Bolero",
@@ -194,7 +204,8 @@ let product = {
             "8. Phố mùa đông",
         ]
     },
-    "Riêng một góc trời":{
+    {
+        id: 10,
         name: "Riêng một góc trời",
         singer: "Tuấn Ngọc",
         kind: "Bolero",
@@ -213,7 +224,8 @@ let product = {
             "08. Về Đây Nghe Em",
         ]
     },
-    "Đêm tâm sự":{
+    {
+        id: 11,
         name: "Đêm tâm sự",
         kind: "Bolero",
         singer: "Lệ Quyên",
@@ -234,7 +246,8 @@ let product = {
             "10. Cho vừa lòng em",
         ]
     },
-    "Đêm Hẹn hò":{
+    {
+        id: 12,
         name: "Đêm Hẹn hò",
         kind: "Bolero",
         singer: "Lệ Quyên",
@@ -253,7 +266,8 @@ let product = {
             "8. Nhật ký đời tôi",
         ]
     },
-    "Tiễn đưa":{
+    {
+        id: 13,
         name: "Tiễn đưa",
         kind: "383",
         singer: "Vũ Khánh",
@@ -273,7 +287,8 @@ let product = {
             "09. Tình Khúc Buồn",
         ]
     },
-    "Đĩa than Tuyệt Phẩm Song Ca":{
+    {
+        id: 14,
         name: "Đĩa than Tuyệt Phẩm Song Ca",
         singe: "Nhiều ca sĩ",
         kind: "383",
@@ -294,7 +309,8 @@ let product = {
             "5B. Can Nha Mau Tim",
         ]
     },
-    "Tuổi Đá Buồn":{
+    {
+        id: 15,
         name: "Tuổi Đá Buồn",
         kind: "383",
         singe: "Nhiều ca sĩ",
@@ -313,7 +329,8 @@ let product = {
             "9. Cát bụi tình xa",
         ]
     },
-    "Bướm Trắng":{
+    {
+        id: 16,
         name: "Bướm Trắng",
         kind: "Bolero",
         singer: "Tuấn Vũ",
@@ -334,7 +351,8 @@ let product = {
             "5B. LK Rừng lá thay chưa & Xót xa",
         ]
     }, 
-    " Mưa nửa đêm":{
+    {
+        id: 17,
         name: " Mưa nửa đêm",
         singer: "Vũ Khanh",
         kind: "Bolero",
@@ -355,7 +373,8 @@ let product = {
             "5B. LIEN KHUC TRUC PHUONG",
         ]
     },
-    "Phố Buồn":{
+    {
+        id: 18,
         name: "Phố Buồn",
         singer: "Thanh Huyền",
         kind: "Bolero",
@@ -376,7 +395,8 @@ let product = {
             "10. Đèn khuya",
         ]
     },
-    "Tình vẫn còn xanh":{
+    {
+        id: 19,
         name: "Tình vẫn còn xanh",
         singer: "Thanh Hà",
         kind: "Bolero",
@@ -396,7 +416,8 @@ let product = {
             "9. Tình Khúc Tháng Sáu ",
         ]
     },
-    "Đĩa than Quang Dũng tình ca Phạm Duy":{
+    {
+        id: 20,
         name: "Đĩa than Quang Dũng tình ca Phạm Duy",
         singer: "Quang Dũng-Phạm Duy",
         kind: "Bolero",
@@ -415,7 +436,8 @@ let product = {
             "8. Ky Niem",
         ]
     },
-    "Chiều mưa biên giới":{
+    {
+        id: 21,
         name: "Chiều mưa biên giới",
         kind: "Tiền chiến",
         singer: "Thanh Huyền",
@@ -436,7 +458,8 @@ let product = {
             "10. Lẻ Bóng",
         ]
     },
-    "Thuyền và Biển":{
+    {
+        id: 22,
         name: "Thuyền và Biển",
         singe: "Nhiều ca sĩ",
         kind: "Bolero",
@@ -457,7 +480,8 @@ let product = {
             "5B. GIOT NANG BEN THEM",
         ]
     },
-    "Moby Play":{
+    {
+        id: 23,
         name: "Moby Play",
         singer: "Moby",
         kind: "Blues",
@@ -473,4 +497,5 @@ let product = {
             "5. South side"
         ]
     }
-};
+]
+console.log(product);
