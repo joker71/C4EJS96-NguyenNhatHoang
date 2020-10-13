@@ -1,8 +1,11 @@
 let product = [
     {
         name: "Mắt biếc",
+        kind: "Blues",
+        rot: 33,
         singer: "Bằng Kiều",
-        caretory:"New LP",
+        caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
         list: [
             "1. Rồi mai tôi đưa em",
@@ -16,9 +19,12 @@ let product = [
         ]
     },
     {
-        name:"The Best",
+        name: "The Best",
         singer: "Bảo Yến",
-        caretory:"New LP",
+        kind: "Jazz",
+        rot: 33,
+        caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
         list: [
             "1A. THOI THE THI CHIA TAY",
@@ -34,9 +40,12 @@ let product = [
         ]
     },
     {
-        name:"Giọt Lệ Sầu",
+        name: "Giọt Lệ Sầu",
         singer: "Chế Linh",
+        kind: "Bolero",
+        rot: 33,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
         list: [
             "1A. GIOT LE SAU",
@@ -49,11 +58,15 @@ let product = [
             "4B. THANH PHO MUA BAY",
             "5B. LOI CUOI CHO NGUOI TINH PHU"
         ]
+
     },
     {
-        name:"Đĩa than Chuyện Hẹn Hò",
-        singe:"Nhiều ca sĩ",
+        name: "Đĩa than Chuyện Hẹn Hò",
+        singe: "Nhiều ca sĩ",
+        kind: "Bolero",
+        rot: 33,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1000000,
         list: [
             "1. Chuyện hẹn hò - Hương Lan & Thái Châu",
@@ -67,9 +80,12 @@ let product = [
         ]
     },
     {
-        name:"Đập Vỡ Cây Đàn",
+        name: "Đập Vỡ Cây Đàn",
         singer: "Duy khánh",
+        kind: "383",
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
+        rot: 45,
         price: 1200000,
         list: [
             "1. Đập vỡ cây đàn",
@@ -84,8 +100,11 @@ let product = [
     },
     {
         name: "Mùa thu chết",
-        singer:"Đức Tuấn - Phạm Duy",
+        singer: "Đức Tuấn - Phạm Duy",
+        kind: "383",
+        rot: 78,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 800000,
         list: [
             "01. Intro",
@@ -102,11 +121,14 @@ let product = [
         ]
     },
     {
-        name:"Lênh đênh nhớ phố",
+        name: "Lênh đênh nhớ phố",
+        kind: "Bolero",
+        rot: 78,
         singer: "Giang Trang",
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1000000,
-        list:[
+        list: [
             "1.Rừng xưa đã khép (Hoà tấu)",
             "2. Như tiếng thở dài",
             "3. Ru đời đi nhé",
@@ -120,9 +142,12 @@ let product = [
         ]
     },
     {
-        name:"Đĩa than Hoa Trinh Nữ",
+        name: "Đĩa than Hoa Trinh Nữ",
+        kind: "Bolero",
+        rot: 78,
         singer: "Nhiều ca sĩ",
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
         list: [
             "1A. LK Tạ từ trong đêm & Từ đó em buồn",
@@ -136,21 +161,27 @@ let product = [
         ]
     },
     {
-        name:"Thriller",
-        singer:"Micheal Jason",
+        name: "Thriller",
+        kind: "Jazz",
+        rot: 45,
+        singer: "Micheal Jason",
         caretory: "Old 1999",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
         list: [
             "1. Human nature",
-            "2. The Lady in my life", 
-            "3. Baby be mine", 
+            "2. The Lady in my life",
+            "3. Baby be mine",
             "4. Thriller"
         ]
     },
     {
-        name:"Chuyện Của Lam",
+        name: "Chuyện Của Lam",
         singer: "Lam Anh",
+        kind: "Bolero",
+        rot: 78,
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1250000,
         list: [
             "1. Chờ thêm 1 đời",
@@ -164,9 +195,12 @@ let product = [
         ]
     },
     {
-        name:"Riêng một góc trời",
+        name: "Riêng một góc trời",
         singer: "Tuấn Ngọc",
+        kind: "Bolero",
+        rot: 45,
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1250000,
         list: [
             "01. Riêng Một Góc Trời",
@@ -180,9 +214,12 @@ let product = [
         ]
     },
     {
-        name:"Đêm tâm sự",
+        name: "Đêm tâm sự",
+        kind: "Bolero",
         singer: "Lệ Quyên",
+        rot: 33,
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1000000,
         list: [
             "01. Hoa nở về đêm",
@@ -195,14 +232,17 @@ let product = [
             "08. Người đi ngoài phô",
             "09. Tình yêu trả lại trăng sao",
             "10. Cho vừa lòng em",
-            ]
+        ]
     },
     {
-        name:"Đêm Hẹn hò",
+        name: "Đêm Hẹn hò",
+        kind: "Bolero",
         singer: "Lệ Quyên",
+        rot: 78,
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1050000,
-        list:[
+        list: [
             "1. Sầu lẻ bóng 2",
             "2. Ai nhớ chăng ai",
             "3. Hẹn ho",
@@ -214,9 +254,12 @@ let product = [
         ]
     },
     {
-        name:"Tiễn đưa",
+        name: "Tiễn đưa",
+        kind: "383",
         singer: "Vũ Khánh",
+        rot: 78,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
         list: [
             "01. Cô Láng Giềng",
@@ -231,11 +274,14 @@ let product = [
         ]
     },
     {
-        name:"Đĩa than Tuyệt Phẩm Song Ca",
-        singe:"Nhiều ca sĩ",
+        name: "Đĩa than Tuyệt Phẩm Song Ca",
+        singe: "Nhiều ca sĩ",
+        kind: "383",
+        rot: 78,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
-        list:[
+        list: [
             "1A. La Dieu Bong",
             "2A. Mai Lo Hai Minh Xa Nhau",
             "3A. Sau Tim Thiep Hong",
@@ -249,11 +295,14 @@ let product = [
         ]
     },
     {
-        name:"Tuổi Đá Buồn",
-        singe:"Nhiều ca sĩ",
+        name: "Tuổi Đá Buồn",
+        kind: "383",
+        singe: "Nhiều ca sĩ",
+        rot: 33,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
-        list:[
+        list: [
             "1. Tôi ơi đừng tuyệt vọng",
             "3. Mưa hồng",
             "4. Như cánh vạc bay",
@@ -265,11 +314,14 @@ let product = [
         ]
     },
     {
-        name:"Bướm Trắng",
+        name: "Bướm Trắng",
+        kind: "Bolero",
         singer: "Tuấn Vũ",
+        rot: 45,
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
-        list:[
+        list: [
             "1A. LK Em là tất cả & Hai vì sao lạc",
             "2A. Nhớ người yêu",
             "3A. LK Sầu lẻ bóng & Đôi bóng & Lẻ bóng",
@@ -281,10 +333,13 @@ let product = [
             "4B. Thôi",
             "5B. LK Rừng lá thay chưa & Xót xa",
         ]
-    },{
-        name:" Mưa nửa đêm",
-        singer:"Vũ Khanh",
+    }, {
+        name: " Mưa nửa đêm",
+        singer: "Vũ Khanh",
+        kind: "Bolero",
+        rot: 33,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
         list: [
             "1A. TAU DEM NAM CU",
@@ -302,7 +357,10 @@ let product = [
     {
         name: "Phố Buồn",
         singer: "Thanh Huyền",
+        kind: "Bolero",
+        rot: 33,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
         list: [
             "1. Nửa đêm ngoài phố",
@@ -319,10 +377,13 @@ let product = [
     },
     {
         name: "Tình vẫn còn xanh",
-        singer:"Thanh Hà",
+        singer: "Thanh Hà",
+        kind: "Bolero",
+        rot: 33,
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 970000,
-        list:[
+        list: [
             "1. Tình Xanh ( sáng tác Trần Quảng Nam)",
             "2. Một Đời Tan Vỡ",
             "3. Mưa Trên Biển Vắng ",
@@ -335,11 +396,14 @@ let product = [
         ]
     },
     {
-        name:"Đĩa than Quang Dũng tình ca Phạm Duy",
+        name: "Đĩa than Quang Dũng tình ca Phạm Duy",
         singer: "Quang Dũng-Phạm Duy",
+        kind: "Bolero",
+        rot: 33,
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 850000,
-        list:[
+        list: [
             "1. Nghin Trung Xa Cach",
             "2. Duong Em Di",
             "3. Chuyen Tinh Buon",
@@ -351,9 +415,12 @@ let product = [
         ]
     },
     {
-        name:"Chiều mưa biên giới",
-        singer:"Thanh Huyền",
+        name: "Chiều mưa biên giới",
+        kind: "Tiền chiến",
+        singer: "Thanh Huyền",
+        rot: 33,
         caretory: "New 100%",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
         list: [
             "1.Nỗi Buồn Hoa Phượng",
@@ -369,11 +436,14 @@ let product = [
         ]
     },
     {
-        name:"Thuyền và Biển",
-        singe:"Nhiều ca sĩ",
+        name: "Thuyền và Biển",
+        singe: "Nhiều ca sĩ",
+        kind: "Bolero",
+        rot: 33,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 1200000,
-        list:[
+        list: [
             "1A. THUYEN VA BIEN",
             "2A. XIN CON GOI TEN NHAU",
             "3A. CON MUA HA",
@@ -383,19 +453,22 @@ let product = [
             "2B. GUI NGUOI EM GAI",
             "3B. PHUONG HONG",
             "4B. BIEN NOI NHO VA EM",
-            "5B. GIOT NANG BEN THEM",  
+            "5B. GIOT NANG BEN THEM",
         ]
     },
     {
         name: "Moby Play",
         singer: "Moby",
+        kind: "Blues",
+        rot: 45,
         caretory: "New LP",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
         price: 3200000,
-        list:[
-            "1. Honey", 
-            "2. Find my baby", 
-            "3. Run on", 
-            "4. Body rock", 
+        list: [
+            "1. Honey",
+            "2. Find my baby",
+            "3. Run on",
+            "4. Body rock",
             "5. South side"
         ]
     }
