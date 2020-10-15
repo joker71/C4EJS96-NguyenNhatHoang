@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+#product{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    width:1100px;
+    margin: 0 auto;
+}
+.productPic img{
+    width: 100%;
+}
+.productItem{
+    width: 33%;
+    padding: 15px;
+}
