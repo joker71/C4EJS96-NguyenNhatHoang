@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-#product{
+#showList{
     display: flex;
     flex-wrap: wrap;
 }

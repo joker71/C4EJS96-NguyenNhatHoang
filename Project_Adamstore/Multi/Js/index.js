@@ -1,4 +1,4 @@
-let mainPro= document.getElementById("product");
+let mainPro= document.getElementById("showList");
 function soProduct(pic, name, des, price)
 {
     mainPro.insertAdjacentHTML('beforeEnd', 
@@ -10,6 +10,7 @@ function soProduct(pic, name, des, price)
         <span>${des}</span>
       </div>
       <div class="productPrice">${price}</div>
+      <button class="addPro">Add to cart</button>
      </div>
     `
     )
