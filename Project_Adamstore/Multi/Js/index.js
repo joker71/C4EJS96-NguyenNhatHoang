@@ -1,5 +1,5 @@
 let mainPro = document.getElementById("showList");
-function soProduct(pic, name, des, price) {
+function soProduct(pic, name, des, price, id) {
   mainPro.insertAdjacentHTML('beforeEnd',
     `
     <div class="productItem">
@@ -9,7 +9,7 @@ function soProduct(pic, name, des, price) {
         <span>${des}</span>
       </div>
       <div class="productPrice">${price}</div>
-      <button class="addPro">Add to cart</button>
+      <div class="AddProduct"><button onclick="AddProduct(${id})" class="btn">Thêm vào giỏ hàng</button></div>
      </div>
     `
   )
@@ -26,13 +26,15 @@ function soProduct(pic, name, des, price) {
 //   let sortProd = showMore.value;
 //  console.log(sortProd);
 // });
+// show sp
 function showProduct() {
   mainPro.innerHTML = '';
   for (let i = 0; i < product.length; i++) {
-    soProduct(product[i].pic, product[i].name, product[i].des, product[i].price);
+    soProduct(product[i].pic, product[i].name, product[i].des, product[i].price, product[i].id);
   }
 }
 showProduct();
+//sắp xếp theo giá
 const sortPro = document.getElementById("sortbyprice");
 sortPro.addEventListener('change', (e) => {
   let sortType = sortPro.value;
@@ -48,8 +50,7 @@ sortPro.addEventListener('change', (e) => {
     });
     showProduct();
   }
-  else
-  {
+  else {
     product.sort(function (a, b) {
       let keyA = a.price;
       let keyB = b.price;
@@ -61,3 +62,42 @@ sortPro.addEventListener('change', (e) => {
 
   }
 });
+
+//giỏ hàng
+var LIST_PRODUCT=[];
+let carts = document.querySelectorAll('.btn');
+
+for (let i = 0; i < carts.length; i++) {
+  carts[i].addEventListener('click', () => {
+    cartNumber();
+    console.log(carts[i]);
+  });
+}
+
+// function cartNumber(){
+//     let productNumber = localStorage.getItem('cartNumber');
+//        let Number = parseInt(productNumber);
+//         console.log(Number);
+//     if( productNumber ){
+//       localStorage.setItem('cartNumer', productNumber + 1);
+//       document.querySelector('.value').textContent = productNumber + 1;
+//     }else{
+//       localStorage.setItem('cartNumer', 1);
+//       document.querySelector('.value').textContent = 1;
+//     }  
+// }
+function cartNumber() {
+  let pro = localStorage.getItem('cartNumber');
+  localStorage.setItem('cartNumber', 1);
+  console.log(pro);
+}
+
+
+
+function AddProduct(id) {
+  var myProduct = product.filter(pr => pr.id == id);
+  LIST_PRODUCT.push(myProduct);
+  console.log(LIST_PRODUCT);
+
+  document.getElementById("totalCardProduct").innerHTML = LIST_PRODUCT.length;
+}

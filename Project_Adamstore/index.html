@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="./Multi/Css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="Header"></div>
-      <div class="Navar">
-        <div class="search">
-          
-        </div>
-        <div class="login">
-          <button class="login button">Login</button>
+    
+    <!-- giỏ hàng -->
+  <div class="cart_icon">
+      <svg width="26px" height="26px" viewBox="0 0 16 16" class="bi bi-cart-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+      <path fill-rule="evenodd" d="M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+    </svg>
+    <span id="totalCardProduct" class="value">0</span>
+  </div>
+    <!-- sx sản pham -->
+  <div class="filter">
+      <div class="show_songs">
+        <div class="show_type">
+          <p>short by</p>
+          <select name="" id="sortbyprice" class="showSort">
+            <option value="hight_to_low">Hight to low</option>
+            <option value="low_to_hight">Low to hight</option>
+          </select>
         </div>
       </div>
-      <div class="filter">
-        <div class="show_songs">
-          <div class="show_type">
-            <p>short by</p>
-            <select name="" id="sortbyprice" class="showSort">
-              <option value="hight_to_low">Hight to low</option>
-              <option value="low_to_hight">Low to hight</option>
-            </select>
-           </div>
-        </div>
-      </div>
-      
+  </div>
+
       <div id="showList">
         <!-- <div class="productItem">
       <div class="productPic"><img src="./Multi/img/Mắt Biêc Bằng Kiều.png" alt=""></div>
@@ -36,10 +36,9 @@
         <b></b> <br>
         <span></span>
       </div>
+      <div class="AddProduct"><button class="btn">Thêm vào giỏ hàng</button></div>
       <div class="productDes"></div>
-    
      </div> -->
-<!-- <button class="addPro">Add to cart</button> -->
       </div>
       <!-- script -->
     </div>
