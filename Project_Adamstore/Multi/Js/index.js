@@ -16,19 +16,6 @@ function soProduct(pic, name, des, price, id) {
     `
   )
 }
-
-// mainPro.innerHTML = '';
-// for (let i = 0; i < product.length; i++) {
-//   soProduct(product[i].pic, product[i].name, product[i].des, product[i].price);
-// }
-
-// const showMore=document.getElementsByClassName("showMore");
-// showMore.addEventListener('change', ()=>{
-
-//   let sortProd = showMore.value;
-//  console.log(sortProd);
-// });
-// show sp
 function showProduct() {
   mainPro.innerHTML = '';
   for (let i = 0; i < product.length; i++) {
@@ -75,19 +62,6 @@ for (let i = 0; i < carts.length; i++) {
     console.log(carts[i]);
   });
 }
-
-// function cartNumber(){
-//     let productNumber = localStorage.getItem('cartNumber');
-//        let Number = parseInt(productNumber);
-//         console.log(Number);
-//     if( productNumber ){
-//       localStorage.setItem('cartNumer', productNumber + 1);
-//       document.querySelector('.value').textContent = productNumber + 1;
-//     }else{
-//       localStorage.setItem('cartNumer', 1);
-//       document.querySelector('.value').textContent = 1;
-//     }  
-// }
 function cartNumber() {
   let pro = localStorage.getItem('cartNumber');
   localStorage.setItem('cartNumber', 1);
@@ -107,3 +81,37 @@ console.log(LIST_PRODUCT);
 //show gio hang 
 let buttonShowCart= document.getElementsByClassName("cart_icon_show");
 
+//visual
+//Automatic slide Image
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+carousel();
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
