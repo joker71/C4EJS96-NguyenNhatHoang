@@ -183,7 +183,7 @@ let product = [
       rot: 45,
       pic: "Thriller.png",
       singer: "Micheal Jason",
-      caretory: "Old 1999",
+      caretory: "Old 90s",
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
       price: 1200000,
       list: [
@@ -352,7 +352,7 @@ let product = [
       singer: "Tuấn Vũ",
       pic: "TN.png",
       rot: 45,
-      caretory: "New 100%",
+      caretory: "Old 90s",
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
       price: 1200000,
       list: [
@@ -375,7 +375,7 @@ let product = [
       kind: "Bolero",
       pic: "TK.png",
       rot: 33,
-      caretory: "New LP",
+      caretory: "Old 90s",
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
       price: 1200000,
       list: [
@@ -508,7 +508,7 @@ let product = [
       pic: "Moby.png",
       kind: "Blues",
       rot: 45,
-      caretory: "New LP",
+      caretory: "Old 90s",
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo quo dolor rem architecto eveniet sunt ad at,",
       price: 3200000,
       list: [

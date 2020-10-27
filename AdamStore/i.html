@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="./media/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Headding -->
+        <div class="heading">
+            <!-- Gio hang -->
+            <div class="cart">
+                <svg width="26px" height="26px" viewBox="0 0 16 16" class="bi bi-cart-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    <path fill-rule="evenodd" d="M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                  </svg> 
+            </div>
+            <span id="totalCardProduct" class="value">0</span>
+            <!-- login -->
+            <div class="login">
+                <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          
+                <div id="id01" class="modal">
+                  
+                  <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="./media/img/IMG_4252.dng" alt="Avatar" class="avatar">
+                    </div>
+                
+                    <div class="loginContainer">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" id="usernamelogin" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" id="password
+                      login" required>
+                        
+                      <button type="button" class="loginbtn">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+                
+                    <div class="loginContainer" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+        <!-- End Headding ? -->
+        <img src="./media/img/Banner1.png" alt="Arnh banner 1" class="mySlides">
+        <div class="content section">
+            <img src="./media/img/Banner1.png" alt="Arnh banner 1" class="mySlides">
+            <img src="./media/img/Banner2.png" alt="Arnh banner 2" class="mySlides">
+            <img src="./media/img/Banner1.png" alt="Arnh banner 1" class="mySlides">
+
+        </div>
+        <!-- eend Slideshow  -->
+        <div class="maincontent">
+          <!-- sidebar -->
+          <div class="sidebar">
+            <div class="sidebarMenu">
+              <button class="showAll">showAll</button>
+              <h2>The loai</h2>
+              <ul>
+                <li><b><i class="sidebarMenuKind">Bolero</i></b></li>
+                <li><b><i class="sidebarMenuKind">383</i></b></li>
+                <li><b><i class="sidebarMenuKind">Jazz</i></b></li>
+                <li><b><i class="sidebarMenuKind">Blues</i></b></li>
+
+              </ul>
+              <h2>Catalory</h2>
+              <ul>
+                <li><b><i class="sidebarMenucaretory">New LP</i></b></li>
+                <li><b><i class="sidebarMenucaretory">New 100%</i></b></li>
+                <li><b><i class="sidebarMenucaretory">Old 90s</i></b></li>
+              </ul>
+              
+              <h2>Rotation</h2>
+              <ul>
+                <li><b><i class="sidebarMenurot">33</i></b></li>
+                <li><b><i class="sidebarMenurot">45</i></b></li>
+                <li><b><i class="sidebarMenurot">78</i></b></li>
+              </ul>
+
+            </div>
+            <div class="sort">
+              <span>sort by</span>
+              <select name="sortbyprice" id="sortbyprice">
+                <option value="hight_to_low">hight to low</option>
+                <option value="low_to_hight">low to hight</option>
+              </select>
+            </div>
+            <div id="showList" class="showList">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis odit aspernatur numquam est maiores magnam tenetur nobis fuga nihil sunt praesentium neque ducimus, alias perferendis culpa voluptates in a.</div>
+          </div>
+        </div>
+
+        <!-- footer -->
+      <div id="footer">
+        <footer class="ft">
+            <div class="gird">
+                <div class="gird-row">
+                  <!-- <div class="gird-colum">
+                      <h3 class="ft-hd">CHĂM SÓC KHÁCH HÀNG</h3>
+                      <ul class="value">
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng </a></li>
+                        <li><a href="#">Hỗ trợ</a></li>
+                      </ul>
+                  </div> -->
+                  <div class="gird-colum">
+                    <h3 class="ft-hd">GIỚI THIỆU VỀ NHÓM</h3>
+                    <ul>
+                      <li><a href="https://vnexpress.net/tim-hieu-ve-dia-than-1472411.html">Giới thiệu về đĩa than</a></li>
+                      <li><a href="#">Tuyển dụng</a></li>
+                      <li><a href="#">Điều khoản</a></li>
+                    </ul>
+                  </div>
+                  <div class="gird-colum">
+                    <h3 class="ft-hd">THEO GIÕI</h3>
+                    <ul>
+                      <li>
+                        <i class="fa fa-facebook-square" style="font-size:24px"><a href="https://www.facebook.com/groups/2369493293345886" style="font-size: 18px;">&emsp;Facebook</a></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-instagram" style="font-size:20px"><a href="#">&emsp;Instagram</a></i>
+                      </li>
+                      <li>
+                        <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                        </svg>
+                        <a href="" style="font-size: 18px;">&emsp;033686868</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="gird-colum">
+                    <h3 class="ft-hd">ĐỊA CHỈ</h3>
+                    <ul>
+                      <li>
+                        <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                          <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg><a href="" style="font-size: 18px;">&emsp;22C-Thành Công</a>
+                      </li>
+                      <li>
+                        <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-signpost-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 1.414V4h2V1.414a1 1 0 0 0-2 0zM1 5a1 1 0 0 1 1-1h10.532a1 1 0 0 1 .768.36l1.933 2.32a.5.5 0 0 1 0 .64L13.3 9.64a1 1 0 0 1-.768.36H2a1 1 0 0 1-1-1V5zm6 5h2v6H7v-6z"/>
+                        </svg>
+                        <a style="font-size: 18px;" href="">Đường Nguyễn Chí Thanh, Quận Cầu Giấy, Hà Nội </a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </footer>
+        <img src="./media/img/logo.png" class="im"/>
+    </div>
+    
+
+    </div>
+    <script src="./media/JS/data.js"></script>
+    <script src="./media/JS/view.js"></script>
+    <script src="./media/JS/control.js"></script>
+</body>
+</html>

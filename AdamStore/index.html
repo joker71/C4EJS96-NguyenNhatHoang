@@ -9,59 +9,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <button onclick="loginFunction()"></button>
-    <div id="container1">
+    <div class="login">
+      <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+      <div id="id01" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./media/img/IMG_4252.dng" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="loginContainer">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="loginContainer" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+ 
+    <div id="container">
+
       <div id="heading">
         <div class="heading-function">
           <svg width="26px" height="26px" viewBox="0 0 16 16" class="bi bi-cart-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
             <path fill-rule="evenodd" d="M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z"/>
           </svg>
-          <div class="login">
-            <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-            <div id="id01" class="modal">
-              
-              <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="imgcontainer">
-                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  <img src="./media/img/IMG_4252.dng" alt="Avatar" class="avatar">
-                </div>
-            
-                <div class="container">
-                  <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-            
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-                    
-                  <button type="submit">Login</button>
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                  </label>
-                </div>
-            
-                <div class="loginContainer" style="background-color:#f1f1f1">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                  <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-              </form>
-            </div>
-          </div>
+          
         </div>
         
         <span id="totalCardProduct" class="value">0</span>
         <div class="w3-content w3-section">
-          <img class="mySlides" src="./media/img/unnamed (1).jpg">
-          <img class="mySlides" src="./media/img/diathan.jpg">
+          <img class="mySlides" src="./media/img/Banner1.png">
+          <img class="mySlides" src="./media/img/Banner2.png">
           <img class="mySlides" src="./media/img/diathan2.jpg">
         </div>
       </div>
       <div id="main">
         <div id="sidebar" class="maincontent">
           <div class="sidebarMenu">
-            <h3>MENU</h3>
+            <h3>Thể loại</h3>
             <ul><b><i>CD Nhạc Quốc Tế</i></b>
               <li>CD</li>
               <li>Gold CD</li>
@@ -69,7 +71,7 @@
             </ul>
             <ul><b><i>CD Nhạc Việt Nam</i></b>
               <li>Nhạc Vàng</li>
-              <li>Nhạc Đỏ</li>
+              <li>Nhạc Đỏ</li>s
               <li>Nhạc Trữ Tình</li>
             </ul>
             <ul><b><i>Xem Theo Thể Loại Nhạc</i></b>
@@ -80,7 +82,7 @@
               <li>Guitar và Đàn Tranh</li>
             </ul>
           </div>
-          <div class="sidebarFilter">
+          <!-- <div class="sidebarFilter">
             <ul class="tab"> 
               <h1>Danh sách sản phẩm</h1>
               <li class="tab-item active" onclick="changeProductList('showList',this)">Tất cả</li>
@@ -88,7 +90,7 @@
               <li class="tab-item" onclick="changeProductList('trend',this)">Phổ biến</li>
               <li class="tab-item" onclick="changeProductList('caretory',this)">Bolero</li>
             </ul>
-          </div>
+          </div> -->
           <!-- <div class="sidebarSearh">
             <h3>Hot Singer</h3>
             <ul>
@@ -100,24 +102,17 @@
           </div> -->
         </div>
         <div id="product" class="maincontent">
-          <div class="container">
+          <div class="contentContainer">
            
             <div id="showList" class="showList">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis odit aspernatur numquam est maiores magnam tenetur nobis fuga nihil sunt praesentium neque ducimus, alias perferendis culpa voluptates in a.</div>
-            <div id="new" class="new"></div>
+            <!-- <div id="new" class="new"></div>
             <div id="trend" class="trend"></div>
-            <div id="caretory" class="caretory"></div>
-            <div class="staMain">
-            <h3 style="color: darkgrey;">THỐNG KÊ SẢN PHẨM ĐƯỢC MUA</h3>
-            <p class="text">Nhạc Vàng</p>
-              <div class="statistical" style="text-align: center; width: 90%;height: 30px; background-color: #616161;color: white;">90%</div>
-            <p class="text">Nhạc Đỏ</p>
-              <div class="sta" style="text-align: center; width: 70%; height: 30px; background-color: #616161; color: white;">70%</div>
-            <p class="text">Nhạc Quốc Tế</p>
-              <div style="text-align: center; width: 30%; height: 30px; background-color: #616161; color: white;">30%</div>
-            </div>
-          </div>        </div>
+            <div id="caretory" class="caretory"></div> -->
+            
+          </div>        
+        </div>
       </div>
-      
+      <!-- footer -->
       <div id="footer">
           <footer class="ft">
               <div class="gird">
@@ -179,6 +174,7 @@
     </div>
     
     <script src="./media/JS/data.js"></script>
-    <script src="./media/JS/custom.js"></script>
+    <script src="./media/JS/view.js"></script>
+    <script src="./media/JS/control.js"></script>
   </body>
 </html>
