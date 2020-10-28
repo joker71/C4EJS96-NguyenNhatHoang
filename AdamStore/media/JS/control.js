@@ -1,3 +1,4 @@
+// show
 let mainPro = document.getElementById("showList");
 function soProduct(pic, name, des, price, id) {
   mainPro.insertAdjacentHTML('beforeEnd',
@@ -74,7 +75,7 @@ for (let k = 0; k <showRot.length; k++) {
     }
   });
 }
-
+//sort
 const sortPro = document.getElementById("sortbyprice");
 sortPro.addEventListener('change', (e) => {
   let sortType = sortPro.value;
@@ -102,6 +103,7 @@ sortPro.addEventListener('change', (e) => {
 
   }
 });
+// Cart
 var LIST_PRODUCT = [];
 let carts = document.querySelectorAll('.btn');
 
