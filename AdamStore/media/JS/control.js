@@ -9,8 +9,9 @@ function soProduct(pic, name, des, price, id) {
           <b>${name}</b> <br>
           <span>${des}</span>
         </div>
-        <div class="productPrice">${price}</div>
-        <div class="AddProduct"><button onclick="AddProduct(${id})" class="btn">Thêm vào giỏ hàng</button></div>
+        <div class="productPrice">₫${price}</div>
+        <div class="AddProduct"><button onclick="AddProduct(${id})" class="btn_item">Thêm vào giỏ hàng</button></div>
+        <div class="showitem"><button onclick="showitem(${id})" class="btn_item">Chi tiết </button></div>
         <div class="showde>
        </div>
       

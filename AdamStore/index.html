@@ -28,14 +28,13 @@
             <!-- login -->
             <div class="login">
                 <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                <button class="btn-login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
           
                 <div id="id01" class="modal" >
                   
-                  <form class="modal-content animate" action="/action_page.php" method="post">
+                  <form class="modal-content animate">
                     <div class="imgcontainer">
                       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                      <img src="./media/img/IMG_4252.dng" alt="Avatar" class="avatar">
                     </div>
                 
                     <div class="loginContainer">
@@ -43,14 +42,17 @@
                       <input type="text" placeholder="Enter Username" name="uname" id="usernamelogin" required>
                 
                       <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" id="password
-                      login" required>
+                      <input type="password" placeholder="Enter Password" name="psw" id="passwordlogin" required>
+                      <input type="password" placeholder="Confirm password" id="cf_password">
                         
-                      <button type="button" class="loginbtn">Login</button>
+                      <button type="button" class="loginbtn" onclick="back_home()">Login</button>
                       <label>
                         <input type="checkbox" checked="checked" name="remember"> Remember me
                       </label>
                     </div>
+                    <div class="register">
+                      <button class="btn_des" onclick="register()" >Đăng kí</button>
+                    </div>  
                 
                     <div class="loginContainer" style="background-color:#f1f1f1">
                       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
@@ -64,19 +66,19 @@
         <div class="slideshow-container">
 
           <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
+            <!-- <div class="numbertext">1 / 3</div> -->
             <img src="./media/img/Banner1.png" style="width:100%">
             <div class="text">Caption Text</div>
           </div>
           
           <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
+            <!-- <div class="numbertext">2 / 3</div> -->
             <img src="./media/img/Banner1.png" style="width:100%">
             <div class="text">Caption Two</div>
           </div>
           
           <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
+            <!-- <div class="numbertext">3 / 3</div> -->
             <img src="./media/img/Banner2.png" " style="width:100%">
             <div class="text">Caption Three</div>
           </div>
@@ -100,54 +102,79 @@
           <!-- sidebar -->
           <div class="sidebar">
             <div class="sidebarMenu">
-              <button class="showAll">showAll</button>
-              <h2>The loai</h2>
+              <button class="showAll" style="background-color: seagreen;">showAll</button>
+              <h2>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                </svg>
+                The loai</h2>
               <ul>
-                <li><b><i class="sidebarMenuKind">Bolero</i></b></li>
-                <li><b><i class="sidebarMenuKind">383</i></b></li>
-                <li><b><i class="sidebarMenuKind">Jazz</i></b></li>
-                <li><b><i class="sidebarMenuKind">Blues</i></b></li>
+                <li><b><i class="sidebarMenuKind">Bolero</i></b>
+                  <span>15</span>
+                </li>
+                <li><b><i class="sidebarMenuKind">383</i></b>
+                  <span>5</span>
+                </li>
+                <li><b><i class="sidebarMenuKind">Jazz</i></b>
+                  <span>2</span>
+                </li>
+                <li><b><i class="sidebarMenuKind">Blues</i></b>
+                  <span>2</span>
+                </li>
 
               </ul>
-              <h2>Catalory</h2>
+              <h2>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                </svg>
+                Catalory</h2>
               <ul>
-                <li><b><i class="sidebarMenucaretory">New LP</i></b></li>
-                <li><b><i class="sidebarMenucaretory">New 100%</i></b></li>
-                <li><b><i class="sidebarMenucaretory">Old 90s</i></b></li>
+                <li><b><i class="sidebarMenucaretory">New LP</i></b>
+                  <span>10</span>
+                </li>
+                <li><b><i class="sidebarMenucaretory">New 100%</i></b>
+                  <span>10</span>
+                </li>
+                <li><b><i class="sidebarMenucaretory">Old 90s</i></b>
+                  <span>4</span>
+                </li>
               </ul>
               
-              <h2>Rotation</h2>
+              <h2>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                </svg>
+                Rotation</h2>
               <ul>
-                <li><b><i class="sidebarMenurot">33</i></b></li>
-                <li><b><i class="sidebarMenurot">45</i></b></li>
-                <li><b><i class="sidebarMenurot">78</i></b></li>
+                <li><b><i class="sidebarMenurot">33</i></b>
+                  <span>12</span>
+                </li>
+                <li><b><i class="sidebarMenurot">45</i></b>
+                  <span>5</span>
+                </li>
+                <li><b><i class="sidebarMenurot">78</i></b>
+                  <span>7</span>
+                </li>
               </ul>
-
-            </div>
             <div class="sort">
-              <span>sort by</span>
+              <h2 style="font-family: 'Roboto', sans-serif;">SORT BY</h2>
               <select name="sortbyprice" id="sortbyprice">
-                <option value="hight_to_low">hight to low</option>
-                <option value="low_to_hight">low to hight</option>
+                <option value="hight_to_low">Hight to low</option>
+                <option value="low_to_hight">Low to hight</option>
               </select>
             </div>
+           
+            </div>
+        
             <div id="showList" class="showList">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis odit aspernatur numquam est maiores magnam tenetur nobis fuga nihil sunt praesentium neque ducimus, alias perferendis culpa voluptates in a.</div>
           </div>
         </div>
-
         <!-- footer -->
-      <div id="footer">
+      <!-- <div id="footer">
         <footer class="ft">
             <div class="gird">
                 <div class="gird-row">
-                  <!-- <div class="gird-colum">
-                      <h3 class="ft-hd">CHĂM SÓC KHÁCH HÀNG</h3>
-                      <ul class="value">
-                        <li><a href="#">Trung tâm trợ giúp</a></li>
-                        <li><a href="#">Hướng dẫn mua hàng </a></li>
-                        <li><a href="#">Hỗ trợ</a></li>
-                      </ul>
-                  </div> -->
+
                   <div class="gird-colum">
                     <h3 class="ft-hd">GIỚI THIỆU VỀ NHÓM</h3>
                     <ul>
@@ -191,14 +218,27 @@
                   </div>
                 </div>
             </div>
-        </footer>
-        <img src="./media/img/logo.png" class="im"/>
-    </div>
-    
+        </footer> -->
+        <!-- <img src="./media/img/logo.png" class="im"/> -->
 
+    </div>
+   
+    </div>
+    <div class="showItem">
+      <table border="2" cellpadding="5">
+        <tr>
+          <td colspan="2">Thông tin</td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        
+      </table>
     </div>
     <script src="media/JS/data.js"></script>
     <script src="media/JS/view.js"></script>
     <script src="media/JS/control.js"></script>
+    <script src="media/JS/login.js"></script>
+
 </body>
 </html>
