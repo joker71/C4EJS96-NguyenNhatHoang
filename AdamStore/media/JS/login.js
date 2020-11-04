@@ -18,8 +18,8 @@ function back_home(){
     if(usernamelogin == '' || passwordlogin=='')
         alert("Xin mời đăng kí")
     else if(passwordlogin == localStorage.getItem(usernamelogin)) {
-        alert('Thành công ');
+        alert('CHÀO MỪNG BẠN ĐẾN VỚI WEBSIDE');
     }
     else
-        alert('sai');
+        alert('TÀI KHOẢN HOẶC MẬT KHẨU KHÔNG ĐÚNG');
 }

@@ -11,9 +11,25 @@ function soProduct(pic, name, des, price, id) {
         </div>
         <div class="productPrice">₫${price}</div>
         <div class="AddProduct"><button onclick="AddProduct(${id})" class="btn_item">Thêm vào giỏ hàng</button></div>
-        <div class="showitem"><button onclick="showitem(${id})" class="btn_item">Chi tiết </button></div>
-        <div class="showde>
+        <div class="showitem"><button  class="btn_item modal-btn" data-modal="${id}">Chi tiết </button></div>
        </div>
+
+      <div class="modal-show" id="${id}" style="display: none;">
+              <div class="modal-bg"></div>
+              <div class="modal-box animate-zoom">
+                  <div class="modal-header">
+                      <div class="modal-close">&times;</div>
+                      <div class="modal-title">Simple modal box</div>
+                  </div>
+                  <div class="modal-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem
+                          maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat
+                          eius? Distinctio reiciendis sint error, repellat
+                          ut soluta doloremque, accusamus vitae placeat?</p>
+      
+                  </div>
+              </div>
+            </div>
       
       `
   )
@@ -104,6 +120,48 @@ sortPro.addEventListener('change', (e) => {
 
   }
 });
+//modal 
+let modalButton = document.getElementsByClassName('modal-btn');
+let modals = document.getElementsByClassName('modal-show');
+let modalClose = document.getElementsByClassName('modal-close');
+let closePic = document.getElementsByClassName('modal-closePic');
+let modalBG = document.getElementsByClassName('modal-bg');
+
+for (let i = 0; i < modalButton.length; i++) {
+    for (let j = 0; j < modals.length; j++) {
+        let x = modalButton[i].getAttribute('data-modal');
+        let y = modals[j].getAttribute('id');
+        let modalCheck = function () {
+            if (x == y) {
+                console.log("true");
+                return true;   
+            }
+        }
+        //Show Modal
+        modalButton[i].addEventListener("click", (e) => {
+          console.log(e);
+            if (modalCheck()) {
+                modals[j].style.display = "block";
+
+            }
+        });
+
+        //Hide Modal
+        let modalHide = function (n) {
+            for (let i = 0; i < n.length; i++) {
+                n[i].addEventListener("click", () => {
+                    if (modalCheck()) {
+                        modals[j].style.display = "none";
+                    }
+                });
+            }
+        }
+
+        modalHide(modalClose);
+        modalHide(modalBG);
+        modalHide(closePic);
+    }
+}
 // Cart
 var LIST_PRODUCT = [];
 let carts = document.querySelectorAll('.btn');
