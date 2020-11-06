@@ -16,17 +16,15 @@ function soProduct(pic, name, des, price, id) {
 
       <div class="modal-show" id="${id}" style="display: none;">
               <div class="modal-bg"></div>
-              <div class="modal-box animate-zoom">
+              <div class="modal-content animate-zoom">
                   <div class="modal-header">
                       <div class="modal-close">&times;</div>
-                      <div class="modal-title">Simple modal box</div>
+                      <div class="modal-title">${id}</div>
+                      <img src="./media/img/./${pic}" alt="">
                   </div>
                   <div class="modal-body">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem
-                          maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat
-                          eius? Distinctio reiciendis sint error, repellat
-                          ut soluta doloremque, accusamus vitae placeat?</p>
-      
+                      <p>${des}</p>
+                      <div class="AddProduct"><button onclick="AddProduct(${id})" class="btn_item">Thêm vào giỏ hàng</button></div>
                   </div>
               </div>
             </div>
