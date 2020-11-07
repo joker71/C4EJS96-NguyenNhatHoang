@@ -22,8 +22,20 @@
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
     width:1100px;
     margin: 0 auto;
+}
+#showList{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  float: right;
+  position: relative;
+  top: -607px;
+ 
+ 
 }
 .productPic img{
     width: 100%;
@@ -34,7 +46,8 @@
     position: relative;
     left: 20px;
     top:-10px;
-    font-family: 'Trispace', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500px;
     text-align: center;
 }
 .productPrice{
@@ -43,7 +56,8 @@
 }
 .btn_item{
   background-color: (100, 100, 100);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500px;
   font-size: larger;
   font-weight: bold;
   opacity: 50%;
@@ -73,7 +87,7 @@
 #sortbyprice{
   border: 0px;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Comfortaa', cursive;
 }
 .sidebarFilter ul.tab li.active {
     background-color: navy;
@@ -95,13 +109,10 @@
 
     /* background-color: khaki; */
 }
-#main {
-    display: flex;
-    width: 100%;
-   
-}
+
+
 .sidebar {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 .sidebarMenu {
     width: 20%;
@@ -110,10 +121,14 @@
     top:-1000px;
     /* background-color: lightsalmon; */
 }
-
+.showAll{
+  font-size: 20px;
+  font-weight: 500px;
+}
 .sidebarMenu ul li{
     line-height: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300px;
 }
 .sidebarFilter {
     width: 100%;
@@ -166,12 +181,12 @@
 
 .maincontent ul{
     font-size: 18px;
-    font-family: Sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 /* .bi-cart-check{
     float: right;
 } */
-.cart{
+#cart{
   float: right;
   cursor: pointer;
   padding-right: 40px;
@@ -179,7 +194,7 @@
 #totalCardProduct{
     float :right;
     font-size: 20px;
-    
+    padding: 20px;
 }
 .statistical{
     /* background-color: seagreen; */
@@ -195,7 +210,7 @@
     background-color: grey;
 }
 .text{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Comfortaa', cursive;
     font-size: 14px;
     letter-spacing: 5px;
 }
@@ -231,7 +246,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 btn-login {
-  color: white;
+  color: grey;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -470,7 +485,8 @@ input[type=text], input[type=password] {
   }
   
   /* slideshow */
-  body {font-family: Verdana, sans-serif; margin:0}
+  body {
+ margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -568,12 +584,21 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 .sidebarMenu{
-  position: relative;
+position: relative;
  top: 94.6px;
  
 }
 .sidebarMenu h2{
   cursor: pointer;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+  color: #9ba4b4;
+  
+}
+.sidebarMenu span{
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300px;
+  color: #9ba4b4;
 }
 #cf_password{
   display: none;
@@ -589,19 +614,23 @@ img {vertical-align: middle;}
 }
 .sidebarMenucaretory{
   font-family: 'Comfortaa', cursive;
+  font-weight: 300px;
   color:#9ba4b4;
 }
 .sidebarMenuKind{
   color:#9ba4b4;
   font-family: 'Comfortaa', cursive;
+  font-weight: 300px;
 }
 .sidebarMenurot{
   color:#9ba4b4;
   font-family: 'Comfortaa', cursive;
+  font-weight: 300px;
 }
 .title{
   color:#9ba4b4;
   font-family: 'Comfortaa', cursive;
+  font-weight: 300px;
 }
 /*footer*/
 .site-footer
@@ -774,4 +803,11 @@ img {vertical-align: middle;}
   body {
     background-color: lightblue;
   }
+}
+button{
+  border-radius: 0.8em;
+}
+/* responsive */
+@media (max-width: 800px) {
+  
 }
