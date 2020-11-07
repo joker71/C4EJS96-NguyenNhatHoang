@@ -13,21 +13,29 @@ function soProduct(pic, name, des, price, id) {
         <div class="AddProduct"><button onclick="AddProduct(${id})" class="btn_item">Thêm vào giỏ hàng</button></div>
         <div class="showitem"><button  class="btn_item modal-btn" data-modal="${id}">Chi tiết </button></div>
        </div>
-
-      <div class="modal-show" id="${id}" style="display: none;">
-              <div class="modal-bg"></div>
-              <div class="modal-content animate-zoom">
-                  <div class="modal-header">
-                      <div class="modal-close">&times;</div>
-                      <div class="modal-title">${id}</div>
-                      <img src="./media/img/./${pic}" alt="">
-                  </div>
-                  <div class="modal-body">
-                      <p>${des}</p>
-                      <div class="AddProduct"><button onclick="AddProduct(${id})" class="btn_item">Thêm vào giỏ hàng</button></div>
-                  </div>
-              </div>
-            </div>
+       <div class="modal-show" id="${id}" style="display: none;">
+       <div class="modal-bg"></div>
+       <div class="modal-content animate-zoom">
+           <div class="modal-header">
+               <div class="modal-close">&times;</div>
+               <div class="modal-title"><h2>${name}<h2></div>
+               <img src="./media/img/./${pic}" alt="">
+           </div>
+           <div class="modal-body">
+               <p>${des}</p>
+               <div class="productPrice">₫${price}</div>
+               <div class="musicList">
+                    <ul>
+                      <li>${id}</li>
+                      <li>${id}</li>
+                      <li>${id}</li>
+                    <ul>
+               </div>
+               <div class="AddProduct"><button onclick="AddProduct(${id})" class="btn_item">Thêm vào giỏ hàng</button></div>
+           </div>
+       </div>
+</div>
+      
       
       `
   )
@@ -35,7 +43,7 @@ function soProduct(pic, name, des, price, id) {
 function showList() {
   mainPro.innerHTML = "";
   for (let i = 0; i < product.length; i++) {
-    soProduct(product[i].pic, product[i].name, product[i].des, product[i].price);
+    soProduct(product[i].pic, product[i].name, product[i].des, product[i].price, product[i].id);
   }
 }
 showList();
@@ -55,7 +63,7 @@ for (let k = 0; k < showKind.length; k++) {
     mainPro.innerHTML = "";
     for (let i = 0; i < product.length; i++) {
       if (product[i].kind == condition) {
-        soProduct(product[i].pic, product[i].name, product[i].des, product[i].price);
+        soProduct(product[i].pic, product[i].name, product[i].des, product[i].price, product[i].id);
       }
     }
   });
@@ -63,14 +71,14 @@ for (let k = 0; k < showKind.length; k++) {
 
 let showCaretory = document.getElementsByClassName("sidebarMenucaretory");
 console.log(showCaretory);
-for (let k = 0; k <showCaretory.length; k++) {
+for (let k = 0; k < showCaretory.length; k++) {
   let condition = showCaretory[k].innerHTML;
   showCaretory[k].addEventListener('click', (e) => {
     console.log(e);
     mainPro.innerHTML = "";
     for (let i = 0; i < product.length; i++) {
       if (product[i].caretory == condition) {
-        soProduct(product[i].pic, product[i].name, product[i].des, product[i].price);
+        soProduct(product[i].pic, product[i].name, product[i].des, product[i].price,product[i].id);
       }
     }
   });
@@ -78,14 +86,14 @@ for (let k = 0; k <showCaretory.length; k++) {
 
 let showRot = document.getElementsByClassName("sidebarMenurot");
 console.log(showRot);
-for (let k = 0; k <showRot.length; k++) {
+for (let k = 0; k < showRot.length; k++) {
   let condition = showRot[k].innerHTML;
   showRot[k].addEventListener('click', (e) => {
     console.log(e);
     mainPro.innerHTML = "";
     for (let i = 0; i < product.length; i++) {
       if (product[i].rot == condition) {
-        soProduct(product[i].pic, product[i].name, product[i].des, product[i].price);
+        soProduct(product[i].pic, product[i].name, product[i].des, product[i].price, product[i].id);
       }
     }
   });
@@ -104,7 +112,7 @@ sortPro.addEventListener('change', (e) => {
       if (keyA > keyB) return 1;
       return 0;
     });
-   showList();
+    showList();
   }
   else {
     product.sort(function (a, b) {
@@ -126,40 +134,47 @@ let closePic = document.getElementsByClassName('modal-closePic');
 let modalBG = document.getElementsByClassName('modal-bg');
 
 for (let i = 0; i < modalButton.length; i++) {
-    for (let j = 0; j < modals.length; j++) {
-        let x = modalButton[i].getAttribute('data-modal');
-        let y = modals[j].getAttribute('id');
-        let modalCheck = function () {
-            if (x == y) {
-                console.log("true");
-                return true;   
-            }
-        }
-        //Show Modal
-        modalButton[i].addEventListener("click", (e) => {
-          console.log(e);
-            if (modalCheck()) {
-                modals[j].style.display = "block";
-
-            }
-        });
-
-        //Hide Modal
-        let modalHide = function (n) {
-            for (let i = 0; i < n.length; i++) {
-                n[i].addEventListener("click", () => {
-                    if (modalCheck()) {
-                        modals[j].style.display = "none";
-                    }
-                });
-            }
-        }
-
-        modalHide(modalClose);
-        modalHide(modalBG);
-        modalHide(closePic);
+  for (let j = 0; j < modals.length; j++) {
+    let x = modalButton[i].getAttribute('data-modal');
+    let y = modals[j].getAttribute('id');
+    console.log(y);
+    console.log(x);
+    let modalCheck = function () {
+      if (x == y) {
+        console.log("true");
+        return true;
+      }
     }
+    //Show Modal
+    modalButton[i].addEventListener("click", (e) => {
+      console.log(e);
+      if (modalCheck()) {
+        modals[j].style.display = "block";
+
+      }
+    });
+
+    //Hide Modal
+    let modalHide = function (n) {
+      for (let i = 0; i < n.length; i++) {
+        n[i].addEventListener("click", () => {
+          if (modalCheck()) {
+            modals[j].style.display = "none";
+          }
+        });
+      }
+    }
+
+    modalHide(modalClose);
+    modalHide(modalBG);
+    modalHide(closePic);
+  }
 }
+
+//modal2
+
+
+
 // Cart
 var LIST_PRODUCT = [];
 let carts = document.querySelectorAll('.btn');
@@ -185,3 +200,4 @@ function AddProduct(id) {
 
   document.getElementById("totalCardProduct").innerHTML = LIST_PRODUCT.length;
 }
+

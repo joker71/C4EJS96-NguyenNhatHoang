@@ -54,3 +54,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+{/* <div class="modal-show" id="${id}" style="display: none;">
+              <div class="modal-bg"></div>
+              <div class="modal-content animate-zoom">
+                  <div class="modal-header">
+                      <div class="modal-close">&times;</div>
+                      <div class="modal-title">${id}</div>
+                      <img src="./media/img/./${pic}" alt="">
+                  </div>
+                  <div class="modal-body">
+                      <p>${des}</p>
+                      <div class="AddProduct"><button onclick="AddProduct(${id})" class="btn_item">Thêm vào giỏ hàng</button></div>
+                  </div>
+              </div>
+      </div> */}
