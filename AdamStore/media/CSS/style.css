@@ -6,17 +6,6 @@
 *{
     box-sizing: border-box;
 }
-#showList{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    float: right;
-    position: relative;
-    top: -607px;
-   
-   
-}
-
 #new, #trend, #caretory {
     display: none;
 }
@@ -98,7 +87,7 @@
     box-sizing: border-box;
 }
 #container {
-    width: 1000px;
+    width: 1920px;
     height: 2000px;
     padding: 0 auto;
     margin: 0 auto; 
@@ -492,7 +481,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1920px;
   position: relative;
   margin: auto;
   top: 10px;

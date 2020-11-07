@@ -137,8 +137,8 @@ for (let i = 0; i < modalButton.length; i++) {
   for (let j = 0; j < modals.length; j++) {
     let x = modalButton[i].getAttribute('data-modal');
     let y = modals[j].getAttribute('id');
-    console.log(y);
-    console.log(x);
+    // console.log(y);
+    // console.log(x);
     let modalCheck = function () {
       if (x == y) {
         console.log("true");
@@ -176,27 +176,59 @@ for (let i = 0; i < modalButton.length; i++) {
 
 
 // Cart
+// var LIST_PRODUCT = [];
+// let carts = document.querySelectorAll('.btn');
+
+// for (let i = 0; i < carts.length; i++) {
+//   carts[i].addEventListener('click', () => {
+//     cartNumber();
+//     console.log(carts[i]);
+//   });
+// }
+// function cartNumber() {
+//   let pro = localStorage.getItem('cartNumber');
+//   localStorage.setItem('cartNumber', 1);
+//   console.log(pro);
+// }
+
+
+
+// function AddProduct(id) {
+//   var myProduct = product.filter(pr => pr.id == id);
+//   LIST_PRODUCT.push(myProduct);
+//   console.log(LIST_PRODUCT);
+
+//   document.getElementById("totalCardProduct").innerHTML = LIST_PRODUCT.length;
+// }
 var LIST_PRODUCT = [];
-let carts = document.querySelectorAll('.btn');
+let cartBtn = document.getElementById('cart')
+let showCartContainer = document.getElementById('show-cart__item')
+let carts = {}
+cartBtn.onclick = function() {
+  for(let product of LIST_PRODUCT) {
+    let name = product.name
+    if (name in carts) {
+      carts[name] ++
+    } else {
+      carts[name] = 1;
+    }
+  }
 
-for (let i = 0; i < carts.length; i++) {
-  carts[i].addEventListener('click', () => {
-    cartNumber();
-    console.log(carts[i]);
-  });
+  console.log(carts)
+  showCartContainer.innerHTML = ''
+  for (let item in carts) {
+    let showCartItem = `
+    <p>${item}</p>
+    <p>${carts[item]}</p>
+    `
+    showCartContainer.innerHTML += showCartItem
+  }
 }
-function cartNumber() {
-  let pro = localStorage.getItem('cartNumber');
-  localStorage.setItem('cartNumber', 1);
-  console.log(pro);
-}
-
-
 
 function AddProduct(id) {
-  var myProduct = product.filter(pr => pr.id == id);
-  LIST_PRODUCT.push(myProduct);
-  console.log(LIST_PRODUCT);
+  let targetItem = product[id]
+
+  LIST_PRODUCT.push(targetItem);
 
   document.getElementById("totalCardProduct").innerHTML = LIST_PRODUCT.length;
 }
